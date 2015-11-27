@@ -5,7 +5,7 @@
 // Login   <nicolaschr@epitech.net>
 //
 // Started on  Tue Nov 24 17:56:34 2015 Nicolas Charvoz
-// Last update Tue Nov 24 18:04:40 2015 Nicolas Charvoz
+// Last update Fri Nov 27 12:48:59 2015 Antoine Garcia
 //
 
 #ifndef MACHINE_HPP_
@@ -13,6 +13,8 @@
 
 # include <iostream>
 
+#define STATE_MAX 8
+#define EDGE_MAX 8
 enum eState
   {
     S0,
