@@ -1,8 +1,14 @@
 project(test_fsa)
 
 add_executable(
-  ../test_fsa
-  Machine.hpp
-  Machine.cpp
-  TestUnitaire.cpp
+  ../test_dynamic_fsa
+  FSA.hh
+  FSA.cpp
+  State.hh
+  State.cpp
+  Matcher.hh
+  Matcher.cpp
+  Edge.hh
+  Edge.cpp
+  main.cpp
   )
