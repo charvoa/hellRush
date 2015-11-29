@@ -1,7 +1,7 @@
 project(test_function)
 
 add_executable(
-  ./test_function
+  ../test_function
   Function.hpp
   main.cpp
   )
