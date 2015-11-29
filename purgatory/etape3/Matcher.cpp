@@ -5,7 +5,7 @@
 // Login   <antoinegarcia@epitech.net>
 //
 // Started on  Sat Nov 28 11:13:58 2015 Antoine Garcia
-// Last update Sat Nov 28 12:05:59 2015 Antoine Garcia
+// Last update Sun Nov 29 07:01:43 2015 Antoine Garcia
 //
 
 #include <sstream>
@@ -15,14 +15,14 @@
 Matcher::Matcher(FSA &fsa):_fsa(fsa)
 {}
 
-void	Matcher::find(const std::string &str)
+bool	Matcher::find(const std::string &str)
 {
   int	nb;
 
-  find(str, nb);
+  retunr (find(str, nb));
 }
 
-void	Matcher::find(const std::string &str, int &i)
+bool	Matcher::find(const std::string &str, int &i)
 {
   i = 0;
   std::cout << "Matching launch" << std::endl;
@@ -58,6 +58,9 @@ void	Matcher::find(const std::string &str, int &i)
 	  j++;
 	}
     }
+  if (i > 0)
+    return (true);
+  return (false);
 }
 
 void	Matcher::setMatcherString(const std::string &str)

@@ -5,7 +5,7 @@
 // Login   <antoinegarcia@epitech.net>
 //
 // Started on  Sat Nov 28 11:10:50 2015 Antoine Garcia
-// Last update Sat Nov 28 11:45:25 2015 Antoine Garcia
+// Last update Sun Nov 29 07:01:01 2015 Antoine Garcia
 //
 
 #ifndef _MATCHER_HH_
@@ -19,8 +19,8 @@ class	Matcher
 public:
   explicit	Matcher(FSA &);
   ~Matcher(){};
-  void	find(const std::string &);
-  void	find(const std::string &, int &);
+  bool	find(const std::string &);
+  bool	find(const std::string &, int &);
   void	setMatcherString(const std::string &);
 };
 
